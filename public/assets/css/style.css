@@ -1,0 +1,815 @@
+@import "default.css";
+
+/*HEADER*/
+header {
+    height: 100px;
+    background: var(--bgc);
+    transition: .4s;
+}
+.logo img {
+    max-width: 205px;
+}
+.logo i {
+    font-size: 22px;
+    padding: 8px;
+    padding-right: 0;
+    transition: .2s;
+}
+.logo i:hover {
+    color: var(--sc);
+    cursor: pointer;
+}
+.menubar ul {
+    text-align: right;
+}
+.menubar ul li {
+    display: inline-block;
+}
+.menubar ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    height: 40px;
+    padding: 7px 24px;
+    color: var(--wc);
+}
+.menubar .login-menu {
+    color: var(--wc);
+    border-radius: 5px;
+    border: 1px solid var(--wc);
+    line-height: 25px;
+}
+/*HEADER*/
+
+/*MOBILE MENU*/
+
+/*ACCORDION CUSTOM*/
+.mobile-logo img {
+    width: 150px;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+.mobile-logo i {
+    font-size: 20px;
+    float: right;
+    margin: 5px 20px;
+    color: var(--pc);
+    cursor: pointer;
+    padding: 5px;
+}
+.mobile-logo i:hover {
+    color: var(--sc);
+}
+.custom.accordion-button {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: var(--psb);
+    font-weight: 400;
+}
+.custom.accordion-button:hover {
+    color: var(--sc);
+}
+.custom.accordion-button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #ccc;
+
+}
+.custom.accordion-button:not(.collapsed) {
+    color: var(--sc);
+    background: var(--rc);
+    -webkit-transform: none;
+    transform: none;
+    font-weight: 400;
+}
+.custom.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "\f068";
+    font-family: 'FontAwesome';
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+.none.accordion-button:not(.collapsed)::after {
+    content: none;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+.custom.accordion-button::after {
+    background-image: none;
+    content: "\f067";
+    font-family: 'FontAwesome';
+}
+.none.accordion-button::after {
+    content: none;
+}
+.custom.accordion-body {
+    padding: 0 0px;
+}
+.custom.accordion-body ul {
+    padding: 0;
+    margin: 0;
+}
+.custom.accordion-body ul li {
+    list-style: none;
+    padding: 8px 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.custom.accordion-body ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--pc);
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 40px;
+}
+.custom.accordion-body ul li a i {
+    font-size: 10px;
+    margin-right: 5px;
+}
+.custom.accordion-body ul li:hover {
+    color: var(--wc);
+    background: var(--rc);
+}
+.custom.accordion-body ul li:hover a {
+    color: var(--sc);
+}
+.custom.accordion-item a {
+    text-decoration: none;
+
+}
+.accordion-button.custom i {
+    padding: 0 10px;
+}
+/*ACCORDION CUSTOM END*/
+.mobile-menu {
+    width: 350px;
+    position: fixed;
+    left: -380px;
+    top: 0;
+    z-index: 2;
+    background: var(--wc);
+    height: 100%;
+    overflow: auto;
+    transition: .4s;
+    padding: 10px 0;
+}
+
+#mobileOverlay {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(101, 41, 145, 0.71);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mobileAdd {
+    left: 0 !important;
+}
+
+.mobile-overlay {
+    position: inherit !important;
+}
+/*MOBILE MENU END*/
+
+/* BANNER CSS START */
+.banner-section{
+    background-image: url(../img/photos/homepage-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-section .overlay {
+    background: #003552bf;
+}
+/* BANNER CSS END */
+
+/* WORK TYPE PART START */
+.work-type .check-item .check i {
+	background: var(--bgc);
+	padding: 22px;
+	border-radius: 50px;
+	font-size: 22px;
+	color: var(--wc);
+}
+/* WORK TYPE PART END */
+
+/* COUNTER PART START */
+.counter-section{
+    background-image: url(../img/photos/counter-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.counter-section .overlay {
+    background: linear-gradient(90deg, #00b4dbc7 -0.91%, #0083b0e6 100%);
+}
+.counter-part p{
+    color: var(--wc);
+}
+/* COUNTER PART END */
+
+/* WHO WE ARE CSS */
+
+/* OUR SERVICE CSS START */
+.service-part{
+    background: var(--csw);
+}
+.service-part h4{
+    color: var(--psb);
+}
+.service{
+    min-height: 229px;
+    background: var(--wc);
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px 0px #0000001A;
+}
+.service .paragraph{
+    color: var(--lbc);
+}
+.service-part .custom-btn{
+    letter-spacing: 0;
+    color: var(--bc);
+    border: 2px solid var(--psb);
+    padding: 13px 60px;
+}
+/* OUR SERVICE CSS END */
+
+/* HOME INFO SECTION START */
+.home-info-section .paragraph{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.home-info-section .card{
+    border: none;
+    background: var(--cs);
+}
+.home-info-section .card .card-body{
+    min-height: 280px;
+}
+.home-info-section .card .paragraph{
+    padding: 15px;
+}
+/* HOME INFO SECTION END */
+
+/* TRAINING OF BLIND START */
+.training-section img{
+    border: 1px solid var(--cs);
+}
+/* TRAINING OF BLIND END */
+
+/* TESTIMONIAL PART START */
+.testimonial-part{
+    background: var(--csw);
+}
+.testimonial-part .coma{
+    background-image: url(../img/photos/testimonial-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.testimonial-part .coma .user{
+    min-width: 90px;
+    border: 4px solid var(--vb);
+    border-radius: 50px;
+}
+.testimonial-part .coma p {
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 35px;
+}
+.testimonial-part .author span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: var(--psb);
+}
+.testimonial-part .icon i{
+    font-size: 18px;
+    color: var(--qs);
+}
+.testimonial-part .icon .active{
+    color: var(--vb);
+}
+/* TESTIMONIAL PART END */
+
+/* LATEST NEWS PART START */
+.latest-news-part span{
+    color: var(--vb);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+.latest-news-part h4{
+    line-height: 40px;
+    color: var(--bc);
+}
+hr.latest-news{
+    height: 2px;
+    background: var(--gc);
+}
+.latest-news-part .card{
+    min-height: 475px;
+    background: var(--cs);
+    border: none;
+}
+.latest-news-part .card span{
+    color: var(--qs);
+}
+.latest-news-part .card p{
+    color: var(--psb);
+}
+.latest-news-part .card a{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--psb);
+}
+/* LATEST NEWS PART END */
+
+/* SUBSCRIBER PART START */
+.subscribe-part h4{
+    color: var(--psb);
+}
+.subscribe-part p{
+    color: var(--dgc);
+}
+.subscribe-part .input-group .form-control {
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid var(--dgc);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--qs);
+    padding-left: 22px;
+}
+.subscribe-part .input-group .form-control::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--qs);
+}
+.subscribe-part .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: -28px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: var(--bgc);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--wc);
+}
+/* SUBSCRIBER PART END */
+
+/* =============================
+Our Service Page Css
+============================= */
+.banner{
+    background-image: url(../img/photos/our-service.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner .overlay {
+    background: #00355259;
+}
+.banner h4{
+    font-weight: 700;
+    color: var(--wc);
+}
+/* UNIQ SERVICE PART START */
+.uniq-service-part .card{
+    border: 2px solid var(--vb);
+    padding: 40px;
+    z-index: -1;
+}
+.uniq-service-part h4{
+    font-weight: 300;
+    line-height: 40px;
+    color: var(--psb);
+    text-transform: uppercase;
+}
+.uniq-service-part h4 strong{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+}
+.uniq-service-part h4 span{
+    color: var(--vb);
+}
+.uniq-service-part .text-box {
+    background: var(--hg);
+    min-height: 180px;
+    min-width: 120%;
+    margin-left: -140px;
+    z-index: 1;
+    border-radius: 10px;
+}
+.uniq-service-part .text-box .left{
+    width: 20%;
+}
+.uniq-service-part .text-box .left h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    padding-left: 20px;
+    padding-top: 18px;
+}
+.uniq-service-part .text-box .right{
+    width: 70%;
+}
+.uniq-service-part .text-box .right .paragraph{
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+/* =============================
+Features and Capabilities
+============================= */
+.feature-banner{
+    background-image: url(../img/photos/feature-capabilities-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.features-capabilities{
+    background: var(--csw);
+}
+.features-capabilities .feature-card{
+    background: var(--wc);
+    border-radius: 5px;
+    padding: 38px 28px;
+    text-align: center;
+    min-height: 414px;
+    box-shadow: 0px 10px 30px 0px #0000001A;
+}
+.features-capabilities .feature-card .paragraph{
+    color: var(--lbc);
+}
+
+/* ===============================
+Business Scope page 
+=============================== */
+.business-scope-banner{
+    background-image: url(../img/photos/business-scope-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.business-page .text-box {
+    min-height: 0px;
+}
+
+/* =================================
+Our partner page css
+================================= */
+.partner-brand{
+    background: var(--csw);
+}
+.partner-brand h4{
+    font-weight: 700;
+    color: var(--psb);
+}
+.partner-brand .brand:hover{
+    background: var(--wc);
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+/* ===================================
+Qualification & Training page css
+=================================== */
+.qualification img{
+    border: 10px solid var(--csw);
+}
+.qualification h4{
+    font-weight: 700;
+    color: var(--psb);
+    text-transform: uppercase;
+    line-height: 42px;
+}
+.qualification-two {
+    width: 110%;
+    margin-left: -30%;
+}
+.rehabilitation-part{
+    background: var(--cs);
+}
+.rehabilitation-part h6{
+    font-weight: 700;
+}
+hr.rehabilitation{
+    height: 2px;
+    background: var(--gc);
+}
+.rehabilitation-part .card{
+    border: none;
+    padding: 28px;
+    min-height: 170px;
+}
+/* our courses part */
+.courses-part h6{
+    font-weight: 700;
+}
+/* how to create website */
+.create-website-part .check-item .check {
+    width: 55px;
+    height: 55px;
+    background: var(--bgc);
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.3s;
+}
+.create-website-part .check-item .check i{
+    font-size: 22px;
+    line-height: 55px;
+    color: var(--wc);
+}
+.create-website-part h4{
+    font-weight: 700;
+    color: var(--psb);
+}
+.create-website-part .check-item:hover{
+    background: var(--bgc);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.create-website-part .check-item:hover p{
+    color: var(--wc);
+}
+
+/* ==============================
+Contact us page css
+============================== */
+.contact-us{
+    background: var(--cs);
+}
+.contact-us .contact-form{
+    background: var(--wc);
+    padding: 40px;
+    box-shadow: 2px 6px 13px -3px #00000040;
+    border-radius: 5px;
+}
+.contact-us .contact-form h5{
+    color: var(--psb);
+}
+.contact-us .contact-form .form-control{
+    border: 1px solid var(--gc);
+}
+.contact-us .contact-form .input-form{
+    border: none;
+    border-bottom: 1px solid var(--gc);
+}
+.contact-us .contact-form .input-form::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gc);
+}
+
+.contact-us .contact-info{
+    background: var(--wc);
+    padding: 40px;
+    box-shadow: 2px 6px 13px -3px #00000040;
+    border-radius: 5px;
+}
+.contact-us .contact-info h5{
+    line-height: 20px;
+}
+.contact-us .contact-info i{
+    font-size: 16px;
+    color: var(--dgc);
+    transition: 0.3s;
+}
+.contact-us .contact-info p{
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--dgc);
+}
+.contact-us .contact-info .social ul li{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--dgc);
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.3s;
+}
+.contact-us .contact-info .social ul li a{
+    line-height: 30px;
+}
+.contact-us .contact-info .social ul li:hover{
+    background: var(--psb);
+}
+.contact-us .contact-info .social ul li:hover i{
+    color: var(--wc);
+}
+hr.info{
+    height: 2px;
+    background: var(--gc);
+}
+
+/* ===========================
+Login Page css 
+=========================== */
+/* LOGIN PART */
+.login-part{
+    background: #F2F2F2;
+}
+.login-card{
+    background: var(--bgc);
+    border: none;
+}
+.login-card h3{
+    color: #FFFFFF;
+    font-size: 34px;
+}
+.login-card h6{
+    color: #FFFFFF;
+}
+.login-card button {
+    border: none;
+    background: #652d90;
+    height: 50px;
+    width: 83%;
+    margin-left: 56px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--wc);
+}
+.login-card p {
+    color: #FFFFFF;
+}
+.login-card ul li {
+    height: 30px;
+    width: 30px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0px 8px;
+    font-size: 24px;
+}
+.login-card ul li a{
+    color: #315db8;
+}
+.login-card .custom-form-control{
+    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--psb);
+}
+.login-card .custom-form-control::placeholder{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--qs);
+}
+/* LOGIN PART END */
+
+/* =============================
+Register page css 
+============================= */
+/* SIGN UP PART */
+.signin-part{
+    background: #F2F2F2;
+}
+.signin-card{
+    background: var(--bgc);
+    border: none;
+}
+.signin-card h3{
+    color: #FFFFFF;
+    font-size: 34px;
+}
+.signin-card h6{
+    color: #FFFFFF;
+}
+.signin-card p {
+    color: #FFFFFF;
+}
+.signin-card label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--wc);
+}
+.signin-card button {
+    border: none;
+    background: #652d90;
+    height: 50px;
+    width: 88%;
+    margin-left: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--wc);
+}
+
+/*FOOTER SECTION*/
+.footer-part {
+    background: var(--psb);
+}
+.footer-part .left p{
+    line-height: 24px;
+    color: var(--wc);
+    font-weight: 300;
+    font-size: 18px;
+}
+.footer-part .left .paragraph{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #F5F5F5;
+}
+.footer-part .left .input-group .form-control{
+    height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #797979;
+    border-radius: 8px;
+}
+.footer-part .left .input-group button{
+    background: var(--bgc);
+    color: var(--wc);
+    border-radius: 8px;
+}
+hr.footer{
+    height: 1px;
+    background: var(--qs);
+}
+
+.footer-part .middle .paragraph{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #F5F5F5;
+}
+.footer-part .middle h6{
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--wc);
+}
+.footer-part .middle .footer-manu li{
+    text-align: center;
+    line-height: 30px;
+    list-style-type: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--wc);
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.footer-part .middle .footer-manu li i{
+    color: var(--wc);
+    font-size: 14px;
+}
+.footer-part .middle .footer-manu li:hover{
+    background: var(--bgc);
+}
+.footer-part .right .paragraph{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F5F5F5;
+}
+.footer-part .right a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--wc);
+}
+/* copyright section */
+.copyright-part{
+    background: var(--bp);
+}
+.copyright-part p{
+    color: var(--wc);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+.copyright-part ul li a{
+    color: var(--wc);
+    font-size: 16px;
+}
+/* FOOTER PART END */
+
+
+
+
+
+
+
+
+
+
+
+
+

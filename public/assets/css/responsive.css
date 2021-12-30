@@ -1,0 +1,248 @@
+@media only screen and (min-width: 991px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo img {
+        width: 215px;
+    }
+    .login-left {
+        height: 390px;
+    }
+    .training-section img {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .training-section img {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+
+@media only screen and (max-width:575px) {
+    /* Defaul Css Here */
+    body {
+        font-size: 13px;
+    }
+    .banner-title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 45px;
+        padding: 5px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    h3 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    h4 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--lbc);
+    }
+    .paragraph {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .custom-btn {
+        padding: 12px 36px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .readmore-btn {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 15px 30px;
+    }
+    
+    /* header part css */
+    header {
+        height: 75px;
+    }
+    .logo img {
+        max-width: 160px;
+    }
+
+    .work-type .check-item .check i {
+        background: var(--bgc);
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    .service-part .custom-btn {
+        padding: 8px 40px;
+        border: 1px solid var(--psb);
+        font-weight: 500;
+    }
+
+    .home-info-section .paragraph {
+        padding-left: 2%;
+        padding-right: 2%;
+        text-align: center;
+    }
+
+    .home-info-section .card .paragraph {
+        padding: 2px;
+    }
+
+    .training-section img {
+        display: none;
+    }
+
+    .testimonial-part .coma p {
+        padding-left: 2%;
+        padding-right: 2%;
+        line-height: 30px;
+    }
+
+    .subscribe-part .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .subscribe-part .input-group .form-control {
+        font-size: 14px;
+    }
+    .subscribe-part .input-group .form-control::placeholder {
+        font-size: 14px;
+    }
+
+    .copyright-part p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .copyright-part ul li a {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    /* Defaul Css Here */
+    .banner-title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 45px;
+        padding: 5px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    h3 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    h4 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--lbc);
+    }
+    .paragraph {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .custom-btn {
+        padding: 12px 36px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .readmore-btn {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 15px 30px;
+    }
+
+    /* header part css */
+    header {
+        height: 75px;
+    }
+    .logo img {
+        max-width: 160px;
+    }
+
+    .work-type .check-item .check i {
+        background: var(--bgc);
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    .service-part .custom-btn {
+        padding: 8px 40px;
+        border: 1px solid var(--psb);
+        font-weight: 500;
+    }
+
+    .home-info-section .paragraph {
+        padding-left: 2%;
+        padding-right: 2%;
+        text-align: center;
+    }
+
+    .home-info-section .card .paragraph {
+        padding: 2px;
+    }
+
+    .training-section img {
+        display: none;
+    }
+
+    .testimonial-part .coma p {
+        padding-left: 2%;
+        padding-right: 2%;
+        line-height: 30px;
+    }
+
+    .subscribe-part .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .subscribe-part .input-group .form-control {
+        font-size: 14px;
+    }
+    .subscribe-part .input-group .form-control::placeholder {
+        font-size: 14px;
+    }
+
+    .copyright-part p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .copyright-part ul li a {
+        font-size: 14px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
