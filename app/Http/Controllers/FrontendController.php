@@ -40,8 +40,10 @@ class FrontendController extends Controller
         return view('services');
     }
 
-    public function blogdetails(){
-        return view('blog_details');
+    public function blogdetails($slug){
+        $data['single_blog'] = Blog::where('slug', $slug)->firstOrFail();
+        $data['related_blog'] = Blog::where('category_id', $data['single_blog']->category_id)->where('id', '!=', $data['single_blog']->id)->limit(4)->get();
+        return view('blog_details', $data);
     }
 
     public function subscribe(Request $request)

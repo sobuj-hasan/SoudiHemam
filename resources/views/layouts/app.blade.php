@@ -252,14 +252,20 @@
     <!-- COPYRIGHT END -->
 
     <!--    JQUERY-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Toastr script CDN -->
     <script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
     <!--    SLICK SLIDER-->
     <script src="{{ asset('assets/js/slick.min.js') }}"></script>
     <!--    BOOSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- COUNTER UP JS --}}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js'></script>
+    {{-- main js --}}
     <script src="{{ asset('assets/js/main.js') }}"></script>
+    {{-- Counter UP script js --}}
+    <script src="{{ asset('assets/js/script.js') }}"></script>
     <!-- Toastr Scripts render -->
     {!! Notify::message() !!}
 

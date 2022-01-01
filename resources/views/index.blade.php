@@ -68,19 +68,31 @@
             <div class="container py-lg-3">
                 <div class="row justify-content-center py-lg-5">
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
-                        <h3>150+</h3>
-                        <p>Brand Company</p>
+                        <div class="span d-flex justify-content-center">
+                            <h3 class="counter">150 </h3>
+                            <h3> +</h3>
+                        </div>
+                        <p>Our Brand Company</p>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
-                        <h3>40+</h3>
+                        <div class="span d-flex justify-content-center">
+                            <h3 class="counter">40 </h3>
+                            <h3> +</h3>
+                        </div>
                         <p>Country Service</p>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
-                        <h3>12+</h3>
+                        <div class="span d-flex justify-content-center">
+                            <h3 class="counter">12 </h3>
+                            <h3> +</h3>
+                        </div>
                         <p>Native Language</p>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
-                        <h3>1500+</h3>
+                        <div class="span d-flex justify-content-center">
+                            <h3 class="counter">1500 </h3>
+                            <h3> +</h3>
+                        </div>
                         <p>Active Online Employee</p>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
