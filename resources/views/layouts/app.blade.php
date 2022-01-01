@@ -236,13 +236,13 @@
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pt-3">
                     <ul class="d-flex justify-content-end">
                         <li class="ms-3 me-2">
-                            <a href="#">Terms & condition</a>
+                            <a href="">Terms & condition</a>
                         </li>
                         <li class="ms-3 me-2">
-                            <a href="#">Business Policy</a>
+                            <a href="">Business Policy</a>
                         </li>
                         <li class="ms-3 me-2">
-                            <a href="#">Help</a>
+                            <a href="">Help</a>
                         </li>
                     </ul>
                 </div>

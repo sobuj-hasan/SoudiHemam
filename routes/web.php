@@ -19,6 +19,7 @@ Route::get('/dashboard', function () {
     Route::get('our/services', [FrontendController::class, 'service'])->name('service');
     Route::get('contactus', [FrontendController::class, 'contactus'])->name('contactus');
     Route::get('contact/message', [FrontendController::class, 'contactmessage'])->name('contact.message');
+    Route::get('blog/details/{slug}', [FrontendController::class, 'blogdetails'])->name('blog.details');
 
     // Dashboard Routes
     Route::group(

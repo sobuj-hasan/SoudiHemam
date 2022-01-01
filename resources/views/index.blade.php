@@ -268,50 +268,19 @@
             <h4 class="mt-4">Latest News</h4>
             <hr class="latest-news">
             <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="assets/img/news_img/latest-news1.png" class="card-img-top" alt="latest-img">
-                        <div class="card-body">
-                            <span>16 Dec 2021</span>
-                            <h6 class="mt-3">There are many variations of passages of Lorem..</h6>
-                            <p class="paragraph mt-3 p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="#"><em>Read More ></em></a>
+                @foreach ($blogs as $blog)
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <div class="card">
+                            <img src="assets/img/news_img/{{ $blog->image }}" class="card-img-top" alt="latest-img">
+                            <div class="card-body">
+                                <span>{{ $blog->created_at->diffForHumans() }}</span>
+                                <h6 class="mt-3">{{ Str::limit($blog->title, 48, $end='...') }}</h6>
+                                <p class="paragraph mt-3 p-2">{{ Str::limit($blog->title, 70, $end='...')  }}</p>
+                                <a href="{{ route('blog.details', $blog->slug) }}"><em>Read More ></em></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="assets/img/news_img/latest-news2.png" class="card-img-top" alt="latest-img">
-                        <div class="card-body">
-                            <span>16 Dec 2021</span>
-                            <h6 class="mt-3">There are many variations of passages of Lorem..</h6>
-                            <p class="paragraph mt-3 p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="#"><em>Read More ></em></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="assets/img/news_img/latest-news3.png" class="card-img-top" alt="latest-img">
-                        <div class="card-body">
-                            <span>16 Dec 2021</span>
-                            <h6 class="mt-3">There are many variations of passages of Lorem..</h6>
-                            <p class="paragraph mt-3 p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="#"><em>Read More ></em></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="assets/img/news_img/latest-news4.png" class="card-img-top" alt="latest-img">
-                        <div class="card-body">
-                            <span>16 Dec 2021</span>
-                            <h6 class="mt-3">There are many variations of passages of Lorem..</h6>
-                            <p class="paragraph mt-3 p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="#"><em>Read More ></em></a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title','| News category')
+@section('title', 'News category')
 @section('content')
 
  <div class="container-fluid">

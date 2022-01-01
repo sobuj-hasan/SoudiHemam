@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Subscribe;
 use Illuminate\Http\Request;
 use App\Models\ContactFormSubmit;
@@ -11,7 +12,8 @@ use Illuminate\Support\Facades\Auth;
 class FrontendController extends Controller
 {
     public function index(){
-        return view('index');
+        $data['blogs'] = Blog::inRandomOrder()->limit(4)->get();
+        return view('index', $data);
     }
 
     public function business_scope(){
@@ -36,6 +38,10 @@ class FrontendController extends Controller
 
     public function service(){
         return view('services');
+    }
+
+    public function blogdetails(){
+        return view('blog_details');
     }
 
     public function subscribe(Request $request)

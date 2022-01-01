@@ -43,7 +43,7 @@
 
                 <!-- LOGO -->
                 <div class="topbar-left">
-                    <a target="_blank" href="{{ route('index') }}" class="logo">
+                    <a href="{{ route('admin.index') }}" class="logo">
                         <span>
                             <h4 class="text-white pt-2"><strong>SaudiHemam </strong></h4>
                         </span>
