@@ -48,6 +48,7 @@
                             <li><a href="{{ route('qualification.training') }}">Training </a></li>
                             <li><a href="{{ route('features.capabilities') }}">Features</a></li>
                             <li><a href="{{ route('contactus') }}">Contact</a></li>
+                            <li><a href="{{ route('contactus') }}">Arabic</a></li>
                             @if (Auth::guest())
                                 <li>
                                     <a href="{{ route('login') }}" class="login-menu">Sign Up</a>

@@ -4,7 +4,7 @@
     <!-- SERVICE BANNER START -->
     <section class="banner business-scope-banner">
         <div class="overlay">
-            <div class="container py-5">
+            <div class="container py-lg-5">
                 <div class="row py-5">
                     <div class="col-12 text-center">
                         <h4>Our Business Scope</h4>
@@ -54,43 +54,43 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/Insurance-and-banking-sector.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/Insurance-and-banking-sector.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Insurance and banking sector</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/Health-Sector.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/Health-Sector.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Health Sector</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/logistic-sector.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/logistic-sector.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Logistic Sector</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/tourism-sector.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/tourism-sector.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Tourism Sector</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/mining-secctor.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/mining-secctor.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Mining Sector</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/hospitality-sector.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/hospitality-sector.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Hospitality Sector</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/construction-sector.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/construction-sector.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Construction Sector</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/research-and-development.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/research-and-development.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Research and Development</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/industrial-sector.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/industrial-sector.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Inductrial Sector</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
-                    <img src="{{ asset('assets/img/photos/Agriculture-sector.png') }}" alt="business-scope">
+                    <img class="w-100" src="{{ asset('assets/img/photos/Agriculture-sector.png') }}" alt="business-scope">
                     <h5 class="mt-2 mb-4">Agricultural Sector</h5>
                 </div>
             </div>

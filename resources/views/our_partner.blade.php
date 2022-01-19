@@ -4,7 +4,7 @@
     <!-- OUR PARTNER BANNER START -->
     <section class="banner" style="background-image: url({{ asset('assets/img/photos/our-partner-banner.png') }});">
         <div class="overlay">
-            <div class="container py-5">
+            <div class="container py-lg-5">
                 <div class="row py-5">
                     <div class="col-12 text-center">
                         <h4>Our Partners</h4>
@@ -23,7 +23,7 @@
                     <img class="img-fluid" src="{{ asset('assets/img/photos/our-partners.png') }}" alt="event">
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 align-self-center">
-                    <h4 class="">Our Business Partners</h4>
+                    <h4 class="mt-2">Our Business Partners</h4>
                     <p class="paragraph mt-4 pe-lg-5">It implements giant projects for many companies, as the services it provides to its clients include internal and
                     external procedures for operations using multiple channels and across several commercial activities. It provides its
                     customers with integrated call center solutions and deals with all types of communications and call center interactions

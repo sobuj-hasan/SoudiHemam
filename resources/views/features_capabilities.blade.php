@@ -4,7 +4,7 @@
     <!-- SERVICE BANNER START -->
     <section class="banner">
         <div class="overlay">
-            <div class="container py-5">
+            <div class="container py-lg-5">
                 <div class="row py-5">
                     <div class="col-12 text-center">
                         <h4>Features and Capabilities</h4>

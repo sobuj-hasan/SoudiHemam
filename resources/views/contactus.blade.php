@@ -5,7 +5,7 @@
     <div class="contact-us py-5">
         <div class="container">
             <div class="row py-lg-5">
-                <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12">
+                <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 mb-3">
                     <form method="GET" action="{{ route('contact.message') }}">
                         @csrf
                         <div class="contact-form">

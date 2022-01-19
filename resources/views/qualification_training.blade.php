@@ -4,7 +4,7 @@
     <!-- OUR PARTNER BANNER START -->
     <section class="banner" style="background-image: url({{ asset('assets/img/photos/qualification-training-banner.png') }});">
         <div class="overlay">
-            <div class="container py-5">
+            <div class="container py-lg-5">
                 <div class="row py-5">
                     <div class="col-12 text-center">
                         <h4>Qualification and Training</h4>
@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row py-lg-5">
                 <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
-                    <img src="{{ asset('assets/img/photos/qualification-img1.png') }}" alt="qualification-img">
+                    <img class="img-fluid" src="{{ asset('assets/img/photos/qualification-img1.png') }}" alt="qualification-img">
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12">
                     <p class="paragraph mt-5">The motto of our Saudi Hemam is</p>

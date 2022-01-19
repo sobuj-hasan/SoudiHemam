@@ -60,7 +60,7 @@
                             </div>
                             <div class="mt-4">
                                 <button class="" type="submit" name="submit"> Register </button>
-                                <a class="d-flex justify-content-start text-white fw-bolder mt-2 ms-lg-5 mb-5" href="{{ route('login') }}">Already Have a Account ! <em>&nbsp; Sign In</em></a>
+                                <a class="d-flex justify-content-start text-white fw-bolder mt-2 ms-5 mb-5" href="{{ route('login') }}">Already Have a Account ! <em>&nbsp; Sign In</em></a>
                             </div>
                         </form>
                     </div>

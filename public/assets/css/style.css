@@ -368,6 +368,7 @@ hr.latest-news{
     font-size: 16px;
     line-height: 28px;
     color: var(--wc);
+    z-index: 1;
 }
 /* SUBSCRIBER PART END */
 
@@ -496,7 +497,7 @@ Qualification & Training page css
     line-height: 42px;
 }
 .qualification-two {
-    width: 110%;
+    width: 115%;
     margin-left: -30%;
 }
 .rehabilitation-part{
@@ -735,10 +736,11 @@ Register page css
     color: #797979;
     border-radius: 8px;
 }
-.footer-part .left .input-group button{
+.footer-part .left .input-group button {
     background: var(--bgc);
     color: var(--wc);
     border-radius: 8px;
+    z-index: 1;
 }
 hr.footer{
     height: 1px;

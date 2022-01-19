@@ -1,4 +1,12 @@
-@media only screen and (min-width: 991px) and (max-width: 1199px) {}
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+
+    /* Qualification & training page responsive */
+    .qualification-two {
+        width: 142%;
+        margin-left: -42%;
+    }
+
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .logo img {
@@ -11,6 +19,42 @@
         display: none;
     }
 
+    /* Service page responsive */
+    .uniq-service-part .text-box .left {
+        width: 100%;
+    }
+    .uniq-service-part .text-box .right {
+        width: 100%;
+    }
+    .uniq-service-part .text-box {
+        min-width: 100%;
+        margin-left: 0px;
+    }
+    .uniq-service-part .text-box .right .paragraph {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* Qualification & training page responsive */
+    .qualification-two {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .qualification .paragraph {
+        display: none;
+    }
+
+    /* Login Page responsive */
+    .login-card {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .login-card button {
+        margin-left: 8%;
+    }
+
+    
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -20,7 +64,44 @@
 }
 
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* Service page responsive */
+    .uniq-service-part .text-box .left {
+        width: 100%;
+    }
+    .uniq-service-part .text-box .right {
+        width: 100%;
+    }
+    .uniq-service-part .text-box {
+        min-width: 100%;
+        margin-left: 0px;
+    }
+    .uniq-service-part .text-box .right .paragraph {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* Qualification & training page responsive */
+    .qualification-two {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .qualification img {
+        border: 5px solid var(--csw);
+    }
+
+    /* Login Page responsive */
+    .login-card {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .login-card button {
+        margin-left: 8%;
+    }
+
+
+
+}
 
 
 @media only screen and (max-width:575px) {
@@ -128,6 +209,40 @@
         font-size: 14px;
     }
 
+    /* Service page responsive */
+    .uniq-service-part .text-box .left {
+        width: 100%;
+    }
+    .uniq-service-part .text-box .right {
+        width: 100%;
+    }
+    .uniq-service-part .text-box {
+        min-width: 100%;
+        margin-left: 0px;
+    }
+    .uniq-service-part .text-box .right .paragraph {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* Qualification & training page responsive */
+    .qualification-two {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .qualification img {
+        border: 5px solid var(--csw);
+    }
+
+    /* Login Page responsive */
+    .login-card {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .login-card button {
+        margin-left: 8%;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -230,6 +345,40 @@
     }
     .copyright-part ul li a {
         font-size: 14px;
+    }
+
+    /* Service page responsive */
+    .uniq-service-part .text-box .left {
+        width: 100%;
+    }
+    .uniq-service-part .text-box .right {
+        width: 100%;
+    }
+    .uniq-service-part .text-box {
+        min-width: 100%;
+        margin-left: 0px;
+    }
+    .uniq-service-part .text-box .right .paragraph {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* Qualification & training page responsive */
+    .qualification-two {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .qualification img {
+        border: 5px solid var(--csw);
+    }
+
+    /* Login Page responsive */
+    .login-card {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .login-card button {
+        margin-left: 8%;
     }
 
 
