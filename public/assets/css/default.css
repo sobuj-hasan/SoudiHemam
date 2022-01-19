@@ -1,3 +1,5 @@
+@import url("./fonts.css");
+
 :root {
     --bgc: linear-gradient(90deg, #00B4DB -0.91%, #0083B0 100%);
     --wc: #ffffff;
@@ -19,14 +21,14 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: 'Gothic', sans-serif;
+    font-weight: 600;
     font-size: 14px;
     color: var(--pc);
 }
 
 p {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     color: var(--lbc);
@@ -38,25 +40,25 @@ h2{
     color: var(--wc);
 }
 h3{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 50px;
     line-height: 58px;
     color: var(--wc);
 }
 h4{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 35px;
     line-height: 35px;
     color: var(--lbc);
 }
 h5{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 35px;
     color: var(--psb);
 }
 h6{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     color: var(--psb);
@@ -84,7 +86,7 @@ button {
     border: none;
 }
 .paragraph{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     color: var(--dgc);
@@ -120,7 +122,7 @@ button {
 }
 
 .readmore-btn {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 26px;
     color: var(--wc);

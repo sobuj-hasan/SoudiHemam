@@ -1,13 +1,25 @@
+/* Arabic Css Here */
+@import url("./fonts.css");
 
-.menubar ul{
-    text-align: left;
+body {
+    font-size: 14px;
+    font-family: "Molarabic";
+    font-weight: 600;
+    line-height: 21px;
+    background: #FFFFFF;
+    font-style: none;
 }
 
-.footer-box ul li{
-    padding-left: 0;
-    padding-right: 28px;
-}
-.footer-box ul li img{
-    left: inherit;
-    right: 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+

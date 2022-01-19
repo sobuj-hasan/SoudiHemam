@@ -1,7 +1,12 @@
+@php
+    $locale = app()->getLocale();
+@endphp
 <!DOCTYPE html>
-<html lang="en">
-<!-- <html lang="ar" dir="rtl"> -->
-
+@if ($locale == 'ar')
+    <html lang="ar" dir="rtl">
+@else
+    <html lang="en" dir="auto">
+@endif
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!--    BOOSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    @if ($locale == 'ar')
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+    @else
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    @endif
     <!--    FONT AWSOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -23,7 +32,9 @@
     <!--    MAIN CSS-->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-    <!-- <link rel="stylesheet" href="css/arabic.css"> -->
+    @if ($locale == 'ar')
+        <link rel="stylesheet" href="css/arabic.css">
+    @endif
 </head>
 
 <body>
@@ -43,12 +54,20 @@
                 <div class="col-md-8 d-none d-md-block">
                     <div class="menubar">
                         <ul>
-                            <li><a href="{{ route('index') }}">Home</a></li>
+                            <li><a href="{{ route('index') }}">@lang('home.home')</a></li>
+                            <li><a href="{{ route('business.scope') }}">About Us</a></li>
                             <li><a href="{{ route('service') }}">Services</a></li>
                             <li><a href="{{ route('qualification.training') }}">Training </a></li>
-                            <li><a href="{{ route('features.capabilities') }}">Features</a></li>
                             <li><a href="{{ route('contactus') }}">Contact</a></li>
-                            <li><a href="{{ route('contactus') }}">Arabic</a></li>
+                            @if ($locale == 'ar')
+                                <li>
+                                    <a href="{{ request()->fullUrlWithQuery(['lang' => 'en']) }}" class=""> @lang('home.english') </a>
+                                </li>
+                            @else
+                                <li>
+                                    <a class="fw-bold" href="{{ request()->fullUrlWithQuery(['lang' => 'ar']) }}"> @lang('home.arabic') </a>
+                                </li>
+                            @endif
                             @if (Auth::guest())
                                 <li>
                                     <a href="{{ route('login') }}" class="login-menu">Sign Up</a>

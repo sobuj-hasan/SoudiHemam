@@ -27,7 +27,7 @@ header {
     display: inline-block;
 }
 .menubar ul li a {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     text-transform: capitalize;
     display: inline-block;
@@ -69,7 +69,7 @@ header {
     -webkit-transition: .4s;
     transition: .4s;
     color: var(--psb);
-    font-weight: 400;
+    font-weight: 600;
 }
 .custom.accordion-button:hover {
     color: var(--sc);
@@ -86,7 +86,7 @@ header {
     background: var(--rc);
     -webkit-transform: none;
     transform: none;
-    font-weight: 400;
+    font-weight: 600;
 }
 .custom.accordion-button:not(.collapsed)::after {
     background-image: none;
@@ -126,7 +126,7 @@ header {
     font-size: 15px;
     text-transform: capitalize;
     color: var(--pc);
-    font-weight: 400;
+    font-weight: 600;
     display: inline-block;
     margin-left: 40px;
 }
@@ -394,7 +394,7 @@ Our Service Page Css
     z-index: -1;
 }
 .uniq-service-part h4{
-    font-weight: 300;
+    font-weight: 600;
     line-height: 40px;
     color: var(--psb);
     text-transform: uppercase;
@@ -569,7 +569,7 @@ Contact us page css
     border-bottom: 1px solid var(--gc);
 }
 .contact-us .contact-form .input-form::placeholder{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     color: var(--gc);
 }
@@ -662,12 +662,12 @@ Login Page css
 }
 .login-card .custom-form-control{
     height: 50px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     color: var(--psb);
 }
 .login-card .custom-form-control::placeholder{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     color: var(--qs);
 }
@@ -719,18 +719,18 @@ Register page css
 .footer-part .left p{
     line-height: 24px;
     color: var(--wc);
-    font-weight: 300;
+    font-weight: 600;
     font-size: 18px;
 }
 .footer-part .left .paragraph{
-    font-weight: 300;
+    font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     color: #F5F5F5;
 }
 .footer-part .left .input-group .form-control{
     height: 50px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     color: #797979;
@@ -748,14 +748,14 @@ hr.footer{
 }
 
 .footer-part .middle .paragraph{
-    font-weight: 300;
+    font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     color: #F5F5F5;
 }
 .footer-part .middle h6{
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     color: var(--wc);
 }
@@ -777,13 +777,13 @@ hr.footer{
     background: var(--bgc);
 }
 .footer-part .right .paragraph{
-    font-weight: 300;
+    font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     color: #F5F5F5;
 }
 .footer-part .right a{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     color: var(--wc);
@@ -794,7 +794,7 @@ hr.footer{
 }
 .copyright-part p{
     color: var(--wc);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 16px;
 }
@@ -842,7 +842,7 @@ user Dashboard CSS Here
 }
 .dashboard .user-dashboard .left-side .profile p {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     color: #975563;
     line-height: 32px;
 }
@@ -903,7 +903,7 @@ user Dashboard CSS Here
 }
 .dashboard .information h6 {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     color: #74408f;
     line-height: 29px;
     padding: 15px;
@@ -933,7 +933,7 @@ user Dashboard CSS Here
 }
 .dashboard .information .basic-information .answer ul li p {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     color: #374151;
     line-height: 12px;
 }
@@ -972,7 +972,7 @@ user Dashboard CSS Here
 }
 .dashboard .information .personal-information .answer ul li p {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     color: #374151;
     line-height: 12px;
 }
