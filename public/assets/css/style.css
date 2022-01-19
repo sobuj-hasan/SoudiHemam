@@ -2,9 +2,10 @@
 
 /*HEADER*/
 header {
-    height: 100px;
-    background: var(--bgc);
+    height: 85px;
+    background: linear-gradient(to right, #98e3f4, #79cbe3, #59b2d2, #389bc1, #0083b0);
     transition: .4s;
+    z-index: 99;
 }
 .logo img {
     max-width: 205px;
@@ -712,7 +713,7 @@ Register page css
 
 /*FOOTER SECTION*/
 .footer-part {
-    background: var(--psb);
+    background: var(--bp);
 }
 .footer-part .left p{
     line-height: 24px;
@@ -787,7 +788,7 @@ hr.footer{
 }
 /* copyright section */
 .copyright-part{
-    background: var(--bp);
+    background: var(--psb);
 }
 .copyright-part p{
     color: var(--wc);

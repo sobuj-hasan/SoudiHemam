@@ -227,11 +227,11 @@
     </footer>
     <!--    FOOTER SECTION END-->
     <!-- COPYRIGHT START -->
-    <section class="copyright-part py-4">
+    <section class="copyright-part py-3">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pt-4">
-                    <p>@copyright-2021 | All Rights Reserved at Saudihemam</p>
+                    <p>@copyright-@php echo date("Y"); @endphp | All Rights Reserved at Saudihemam</p>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pt-3">
                     <ul class="d-flex justify-content-end">
