@@ -38,12 +38,28 @@
 </head>
 
 <body>
-
+    {{-- internal css for arabic css --}}
+    @if ($locale == 'ar')
+        <style>
+            .menubar ul {
+                text-align: left;
+            }
+            header {
+                background: linear-gradient(to right, #0083b0, #389bc1, #59b2d2, #79cbe3, #98e3f4);
+            }
+        </style>
+        @else
+        <style>
+            .menubar ul {
+                text-align: right;
+            }
+        </style>
+    @endif
     <!--    HEADER SECTION-->
     <header class="d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-3">
                     <div class="logo d-flex justify-content-between align-items-center">
                         <a href="{{ route('index') }}">
                             <img src="{{ asset('assets/img/logo/logo.png') }}" alt="Logo">
@@ -51,14 +67,14 @@
                         <i class="fa fa-bars d-md-none" onClick="mobileClick()" aria-hidden="true"></i>
                     </div>
                 </div>
-                <div class="col-md-8 d-none d-md-block">
+                <div class="col-md-9 d-none d-md-block">
                     <div class="menubar">
                         <ul>
                             <li><a href="{{ route('index') }}">@lang('home.home')</a></li>
-                            <li><a href="{{ route('business.scope') }}">About Us</a></li>
-                            <li><a href="{{ route('service') }}">Services</a></li>
-                            <li><a href="{{ route('qualification.training') }}">Training </a></li>
-                            <li><a href="{{ route('contactus') }}">Contact</a></li>
+                            <li><a href="{{ route('business.scope') }}">@lang('home.aboutus')</a></li>
+                            <li><a href="{{ route('service') }}">@lang('home.service')</a></li>
+                            <li><a href="{{ route('qualification.training') }}">@lang('home.training')</a></li>
+                            <li><a href="{{ route('contactus') }}">@lang('home.contactus')</a></li>
                             @if ($locale == 'ar')
                                 <li>
                                     <a href="{{ request()->fullUrlWithQuery(['lang' => 'en']) }}" class=""> @lang('home.english') </a>
@@ -70,7 +86,7 @@
                             @endif
                             @if (Auth::guest())
                                 <li>
-                                    <a href="{{ route('login') }}" class="login-menu">Sign Up</a>
+                                    <a href="{{ route('login') }}" class="login-menu">@lang('home.signup')</a>
                                 </li>
                             @else
                                 <li>
@@ -104,12 +120,32 @@
                 </a>
                 <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
             </div>
-
+            @if ($locale == 'ar')
+                <div class="accordion-item custom">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <a class="login-menu" href="{{ route('login') }}">
+                            <button class="accordion-button custom collapsed none" type="button">
+                                <a href="{{ request()->fullUrlWithQuery(['lang' => 'en']) }}" class=""> @lang('home.english') </a>
+                            </button>
+                        </a>
+                    </h2>
+                </div>
+            @else
+                <div class="accordion-item custom">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <a class="login-menu" href="{{ route('login') }}">
+                            <button class="accordion-button custom collapsed none" type="button">
+                                <a class="fw-bold" href="{{ request()->fullUrlWithQuery(['lang' => 'ar']) }}"> @lang('home.arabic') </a>
+                            </button>
+                        </a>
+                    </h2>
+                </div>
+            @endif
             <div class="accordion-item custom ">
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('index') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Home
+                            @lang('home.home')
                         </button>
                     </a>
                 </h2>
@@ -118,7 +154,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('business.scope') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            About Us
+                            @lang('home.aboutus')
                         </button>
                     </a>
                 </h2>
@@ -127,7 +163,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('service') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Services
+                            @lang('home.service')
                         </button>
                     </a>
                 </h2>
@@ -136,7 +172,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('features.capabilities') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Features
+                            @lang('home.features')
                         </button>
                     </a>
                 </h2>
@@ -145,7 +181,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a href="{{ route('contactus') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Contact
+                            @lang('home.contactus')
                         </button>
                     </a>
                 </h2>
@@ -154,7 +190,7 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <a class="login-menu" href="{{ route('login') }}">
                         <button class="accordion-button custom collapsed none" type="button">
-                            Sign Up
+                            @lang('home.signup')
                         </button>
                     </a>
                 </h2>
@@ -173,13 +209,13 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="left pt-4">
-                        <p>About Us</p>
+                        <p>@lang('home.aboutus')</p>
                         <hr class="footer">
-                        <p class="paragraph pt-3 pb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        <p class="paragraph pt-3 pb-4">@lang('home.footer_text')</p>
                         <form method="GET" action="{{ route('subscribe') }}">
                             @csrf
                             <div class="input-group mb-5">
-                                <input type="email" class="form-control" placeholder="Email" value="{{ old('email') }}" name="email" required>
+                                <input type="email" class="form-control" placeholder="@lang('home.email_address')" value="{{ old('email') }}" name="email" required>
                                 <button class="btn btn-outline-secondary" type="submit" id="button-addon2">&nbsp;&nbsp; <i class="fas fa-paper-plane"></i> &nbsp;&nbsp;</button>
                             </div>
                             @error('email')
@@ -216,7 +252,7 @@
 
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="right pt-4">
-                        <p class="paragraph">Contact </p>
+                        <p class="paragraph">@lang('home.contactus')</p>
                         <hr class="footer">
                         <div class="footer-link">
                             <ul>
@@ -233,7 +269,7 @@
                                     <a href="{{ route('login') }}">Account</a>
                                 </li>
                                 <li class="my-3 ms-2">
-                                    <a href="{{ route('contactus') }}">Contact Us</a>
+                                    <a href="{{ route('contactus') }}">@lang('home.contactus')</a>
                                 </li>
                                 <li class="my-3 ms-2">
                                     <a href="{{ route('index') }}#latest-news-part">News & Media</a>
@@ -251,18 +287,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pt-4">
-                    <p>@copyright-@php echo date("Y"); @endphp | All Rights Reserved at Saudihemam</p>
+                    <p>@lang('home.copyright')</p>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pt-3">
                     <ul class="d-flex justify-content-end">
                         <li class="ms-3 me-2">
-                            <a href="">Terms & condition</a>
+                            <a href="">@lang('home.terms')</a>
                         </li>
                         <li class="ms-3 me-2">
-                            <a href="">Business Policy</a>
+                            <a href="">@lang('home.privacy_policy')</a>
                         </li>
                         <li class="ms-3 me-2">
-                            <a href="">Help</a>
+                            <a href="">@lang('home.help_support')</a>
                         </li>
                     </ul>
                 </div>

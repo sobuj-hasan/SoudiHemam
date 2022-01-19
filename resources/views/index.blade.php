@@ -8,13 +8,13 @@
                 <div class="row py-lg-4">
                     <div class="col-12">
                         <div class="banner-content">
-                            <h1 class="banner-title">Hello World !</h1>
-                            <h2 class="mt-4">We are also able to do work</h2>
+                            <h1 class="banner-title">@lang('home.helloworld')</h1>
+                            <h2 class="mt-4">@lang('home.we_are_able_to_work')</h2>
                             <img src="assets/img/photos/banner-line1.png" alt="banner-line">
                             <img class="ms-4" src="assets/img/photos/banner-line2.png" alt="banner-line">
                             <img class="ms-4" src="assets/img/photos/banner-line3.png" alt="banner-line">
                             <div class="banner-btn pt-5">
-                                <a class="custom-btn mt-4" href="{{ route('business.scope') }}">About Us</a>
+                                <a class="custom-btn mt-4" href="{{ route('business.scope') }}">@lang('home.aboutus')</a>
                             </div>
                         </div>
                     </div>
@@ -36,25 +36,25 @@
                         <div class="check">
                             <i class="fas fa-check"></i>
                         </div>
-                        <p class="ps-4 pe-lg-5 mt-3">I can be your mute and deaf audible voice</p>
+                        <p class="ps-4 pe-lg-5 mt-3">@lang('home.list1')</p>
                     </div>
                     <div class="check-item d-flex my-4">
                         <div class="check">
                             <i class="fas fa-check"></i>
                         </div>
-                        <p class="ps-4 pe-lg-5 mt-3">I am able to connect you to the big world with a motor disability</p>
+                        <p class="ps-4 pe-lg-5 mt-3">@lang('home.list2')</p>
                     </div>
                     <div class="check-item d-flex my-4">
                         <div class="check">
                             <i class="fas fa-check"></i>
                         </div>
-                        <p class="ps-4 pe-lg-5 mt-3">I am able to be your guide. You blind one</p>
+                        <p class="ps-4 pe-lg-5 mt-3">@lang('home.list3')</p>
                     </div>
                     <div class="check-item d-flex my-4">
                         <div class="check">
                             <i class="fas fa-check"></i>
                         </div>
-                        <p class="ps-4 pe-lg-5 mt-3">I can be part of the prisoner change</p>
+                        <p class="ps-4 pe-lg-5 mt-3">@lang('home.list4')</p>
                     </div>
                 </div>
             </div>
@@ -72,32 +72,32 @@
                             <h3 class="counter">150 </h3>
                             <h3> +</h3>
                         </div>
-                        <p>Our Brand Company</p>
+                        <p>@lang('home.brand_company')</p>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
                         <div class="span d-flex justify-content-center">
                             <h3 class="counter">40 </h3>
                             <h3> +</h3>
                         </div>
-                        <p>Country Service</p>
+                        <p>@lang('home.country_service')</p>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
                         <div class="span d-flex justify-content-center">
                             <h3 class="counter">12 </h3>
                             <h3> +</h3>
                         </div>
-                        <p>Native Language</p>
+                        <p>@lang('home.native_language')</p>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
                         <div class="span d-flex justify-content-center">
                             <h3 class="counter">1500 </h3>
                             <h3> +</h3>
                         </div>
-                        <p>Active Online Employee</p>
+                        <p>@lang('home.active_employee')</p>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
                         <h3>24/7</h3>
-                        <p>Live Support</p>
+                        <p>@lang('home.live_support')</p>
                     </div>
                 </div>
             </div>
@@ -110,11 +110,8 @@
         <div class="container">
             <div class="row py-lg-5">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 align-self-center">
-                    <h4 class="">Who we are?</h4>
-                    <p class="paragraph mt-4 pe-lg-5">Saudi Hemam is a business center and a unique entity that aspires to provide vital support and effective support by
-                    relying on the people of determination in the community and spreading the spirit of innovation and production, based on
-                    the words of the Crown Prince, Prince Muhammad bin Salman, that Saudi Hemam is like Jabal Tuwaiq, and we seek to provide
-                    an integrated set of services</p>
+                    <h4 class="">@lang('home.who_we_are')</h4>
+                    <p class="paragraph mt-4 pe-lg-5">@lang('home.who_we_are_text')</p>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 align-self-center">
                     <img class="img-fluid" src="assets/img/photos/who-we-are.png" alt="event">
@@ -127,59 +124,59 @@
     <!-- OUR SERVICES START -->
     <section class="service-part py-5">
         <div class="container pt-lg-5 pb-lg-3 text-center">
-            <h4 class="mb-5">Our Services</h4>
+            <h4 class="mb-5">@lang('home.our_services')</h4>
             <div class="row justify-content-center">
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
                         <img class="mt-4" src="assets/img/icon/service1.png" alt="service-img">
-                        <p class="paragraph p-4">Establishing, developing, operating and managing digital call centers</p>
+                        <p class="paragraph p-4">@lang('home.service1')</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
                         <img class="mt-4" src="assets/img/icon/service2.png" alt="service-img">
-                        <p class="paragraph p-4">Digital interaction services and business enablement through new channels </p>
+                        <p class="paragraph p-4">@lang('home.service2')</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
                         <img class="mt-4" src="assets/img/icon/service3.png" alt="service-img">
-                        <p class="paragraph p-4">Undertaking services for work and attribution of corporate operational activities </p>
+                        <p class="paragraph p-4">@lang('home.service3')</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
                         <img class="mt-4" src="assets/img/icon/service4.png" alt="service-img">
-                        <p class="paragraph p-4">Digital marketing and e-marketing services </p>
+                        <p class="paragraph p-4">@lang('home.service4')</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
                         <img class="mt-4" src="assets/img/icon/service5.png" alt="service-img">
-                        <p class="paragraph p-4">Social media and management services </p>
+                        <p class="paragraph p-4">@lang('home.service5')</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
                         <img class="mt-4" src="assets/img/icon/service6.png" alt="service-img">
-                        <p class="paragraph p-4">Chahbot services And Event registration services </p>
+                        <p class="paragraph p-4">@lang('home.service6')</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
                         <img class="mt-4" src="assets/img/icon/service7.png" alt="service-img">
-                        <p class="paragraph p-4">Customer Experience and Relationship Management Services </p>
+                        <p class="paragraph p-4">@lang('home.service7')</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
                         <img class="mt-4" src="assets/img/icon/service8.png" alt="service-img">
-                        <p class="paragraph p-4">Media center management services </p>
+                        <p class="paragraph p-4">@lang('home.service8')</p>
                     </div>
                 </div>
 
                 <div class="service-btn pt-3">
-                    <a class="custom-btn mt-lg-4" href="{{ route('service') }}">View All</a>
+                    <a class="custom-btn mt-lg-4" href="{{ route('service') }}">@lang('home.view_all')</a>
                 </div>
             </div>
         </div>
@@ -189,17 +186,14 @@
     <!-- HOME INFO SECTION START -->
     <section class="home-info-section py-5">
         <div class="container text-center py-lg-4">
-            <p class="paragraph">Saudi Hemam is a trusted entity specialized in providing integrated solutions to support business by people of
-            determination as a creative team and as a reliable entity that provides its services with the help of its main partners
-            as they are from the exclusive elite. Our role is through</p>
+            <p class="paragraph">@lang('home.service_provider')</p>
             <img src="assets/img/photos/info-line.png" alt="info-line">
             <div class="row mt-5 mb-4 justify-content-center">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="card">
                         <img src="assets/img/photos/Establishing,-developing,-operating-and-managing-multiple-integrated-call-centers-and-channels.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="paragraph mt-4">Establishing, developing, operating and managing multiple integrated call centers and channels (traditional digital and
-                            community) for government agencies and agencies, the private sector and the third sector</p>
+                            <p class="paragraph mt-4">@lang('home.service_provider1')</p>
                         </div>
                     </div>
                 </div>
@@ -207,8 +201,7 @@
                     <div class="card">
                         <img src="assets/img/photos/Providing-outsourcing-services-and-outsourcing-the-operations-of-the-various-institutional-tasks.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="paragraph mt-4">Providing outsourcing services and outsourcing the operations of the various institutional tasks of the entities to
-                            government agencies and agencies, the private sector and the third sector</p>
+                            <p class="paragraph mt-4">@lang('home.service_provider2')</p>
                         </div>
                     </div>
                 </div>
@@ -216,9 +209,7 @@
                     <div class="card">
                         <img src="assets/img/photos/Providing-innovative-solutions-and-methodologies-to-support-operations-and-management.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="paragraph mt-4">Providing innovative solutions and methodologies to support operations and management by using it as an external
-                            operator to provide services on behalf of the providing or supervising service or commercial organization or
-                            organization</p>
+                            <p class="paragraph mt-4">@lang('home.service_provider3')</p>
                         </div>
                     </div>
                 </div>
@@ -232,12 +223,13 @@
         <div class="container">
             <div class="row pb-5">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                    <h4 class="">Rehabilitation & Training of Blind</h4>
-                    <p class="paragraph mt-4 pe-lg-5">We in Saudi Hemam are always motivated by a passion for rehabilitation and training to unleash people of determination
-                    and help them advance, discover strengths and reach high levels of performance. We think about the concerns of the Saudi
-                    Hemam in the sense that investing in the human element is the greatest investment.</p>
+                    <h4 class="">@lang('home.rehabilitation_and_training')</h4>
+                    <p class="paragraph mt-4 pe-lg-5">@lang('home.rehabilitation_and_training1')</p>
+                    <p class="paragraph pe-lg-5">@lang('home.rehabilitation_and_training2')</p>
+                    <p class="paragraph pe-lg-5">@lang('home.rehabilitation_and_training3')</p>
+                    <p class="paragraph pe-lg-5">@lang('home.rehabilitation_and_training4')</p>
                     <div class="mt-5">
-                        <a class="readmore-btn" href="{{ route('qualification.training') }}">Read More</a>
+                        <a class="readmore-btn" href="{{ route('qualification.training') }}">@lang('home.read_more')</a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 align-self-center">

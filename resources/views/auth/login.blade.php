@@ -9,26 +9,26 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="card login-card my-5">
-                            <h3 class="text-center mt-5">Sing In</h3>
-                            <h6 class="text-center mb-5">to your Saudi Hemam Account</h6>
+                            <h3 class="text-center mt-5">@lang('home.login')</h3>
+                            <h6 class="text-center mb-5">@lang('home.to_training_incu_account')</h6>
                             <div class="mb-5 custom-input ps-md-5 pe-md-5">
-                                <input type="text" class="form-control custom-form-control placeicon" placeholder="Email Address" value="{{ old('email') }}" name="email">
+                                <input type="text" class="form-control custom-form-control placeicon" placeholder="@lang('home.email_address')" value="{{ old('email') }}" name="email">
                                 @error('email')
                                     <span class="text-warning fw-bolder">{{ $message }}</span>
                                 @enderror
                             </div>
                             <div class="mb-5 custom-input ps-md-5 pe-md-5">
-                                <input type="password" class="form-control custom-form-control placeicon" placeholder="Password" value="{{ old('password') }}" name="password">
+                                <input type="password" class="form-control custom-form-control placeicon" placeholder="@lang('home.password')" value="{{ old('password') }}" name="password">
                                 @error('password')
                                     <span class="text-warning fw-bolder">{{ $message }}</span>
                                 @enderror
-                                <a class="d-flex justify-content-end fw-bolder text-white mt-2" href="#">Forget Password?</a>
+                                <a class="d-flex justify-content-end fw-bolder text-white mt-2" href="#">@lang('home.forget_password')</a>
                             </div>
                             <div class="mt-3">
-                                <button class="" type="submit" name="submit"> Log In </button>
-                                <a class="d-flex justify-content-start fw-bolder text-white mt-2 ms-5 mb-5" href="{{ route('register') }}">Don't Have any Account ? <em>&nbsp; Sign Up</em></a>
+                                <button class="arabic-button" type="submit" name="submit">@lang('home.login')</button>
+                                <a class="d-flex justify-content-start fw-bolder text-white mt-2 ms-5 mb-5" href="{{ route('register') }}">@lang('home.havent_any_account') <em>&nbsp; @lang('home.signup')</em></a>
                             </div>
-                            <p class="fw-bolder d-flex justify-content-center">Sign In using</p>
+                            <p class="fw-bolder d-flex justify-content-center">@lang('home.signin_using')</p>
                             <ul class="d-flex justify-content-center mb-5">
                                 <li><a href="#"><i class="fab fa-google"></i></a></li>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
