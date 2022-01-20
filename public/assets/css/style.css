@@ -336,41 +336,40 @@ hr.latest-news{
 }
 /* LATEST NEWS PART END */
 
-/* SUBSCRIBER PART START */
-.subscribe-part h4{
+/* GET NOTIFICATIONS */
+.get-notificaiton h3{
     color: var(--psb);
+    font-size: 35px;
 }
-.subscribe-part p{
+.get-notificaiton .custom-control{
+    height: 65px;
+    width: 70%;
+    border: 2px solid var(--vb);
+    outline: none;
+    border-radius: 4px;
+    background: var(--wc);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
     color: var(--dgc);
+    padding-left: 20px;
 }
-.subscribe-part .input-group .form-control {
-    height: 60px;
-    border-radius: 50px;
-    border: 1px solid var(--dgc);
-    font-weight: 500;
+.get-notificaiton .custom-control::placeholder{
+    font-weight: 600;
     font-size: 16px;
-    color: var(--qs);
-    padding-left: 22px;
+    line-height: 26px;
+    color: var(--gc);
 }
-.subscribe-part .input-group .form-control::placeholder {
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--qs);
-}
-.subscribe-part .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-    margin-left: -28px;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background: var(--bgc);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 28px;
+.get-notificaiton button{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 4px;
+    width: 30%;
     color: var(--wc);
-    z-index: 1;
+    background: var(--vb);
 }
-/* SUBSCRIBER PART END */
+/* GET NOTIFICATIONS */
 
 /* =============================
 Our Service Page Css

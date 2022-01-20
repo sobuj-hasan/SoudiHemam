@@ -104,12 +104,12 @@
     <!-- CONTACT US PART END -->
 
     <!-- SUBSCRIBER PART START -->
-    <section class="subscribe-part my-5">
-        <div class="container">
-            <div class="row py-lg-4">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                    <h4>Get Notification</h4>
-                    <p>Subscribe here to get update notification in your mail</p>
+    <section class="get-notificaiton my-5">
+        <div class="container py-lg-5">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-1">
+                    <h3 class="mt-1">Get Notification</h3>
+                    <p class="paragraph">Subscribe here to get update notification in your mail</p>
                 </div>
                 @include('app_components.subscriber')
             </div>
