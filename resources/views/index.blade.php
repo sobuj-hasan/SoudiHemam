@@ -34,25 +34,25 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="check-item d-flex my-4">
                         <div class="check">
-                            <i class="fas fa-check"></i>
+                            <img src="{{ asset('assets/img/icon/I-can-be-your-mute-and-deaf-audible-voice.png') }}" alt="work-icon">
                         </div>
                         <p class="ps-4 pe-lg-5 mt-3">@lang('home.list1')</p>
                     </div>
                     <div class="check-item d-flex my-4">
                         <div class="check">
-                            <i class="fas fa-check"></i>
+                            <img src="{{ asset('assets/img/icon/I-am-able-to-be-your-guide.-You-blind-one2.png') }}" alt="work-icon">
                         </div>
                         <p class="ps-4 pe-lg-5 mt-3">@lang('home.list2')</p>
                     </div>
                     <div class="check-item d-flex my-4">
                         <div class="check">
-                            <i class="fas fa-check"></i>
+                            <img src="{{ asset('assets/img/icon/I-am-able-to-connect-you-to-the-big-world-with-a-motor-disability.png') }}" alt="work-icon">
                         </div>
                         <p class="ps-4 pe-lg-5 mt-3">@lang('home.list3')</p>
                     </div>
                     <div class="check-item d-flex my-4">
                         <div class="check">
-                            <i class="fas fa-check"></i>
+                            <img src="{{ asset('assets/img/icon/I-can-be-part-of-the-prisoner-change.png') }}" alt="work-icon">
                         </div>
                         <p class="ps-4 pe-lg-5 mt-3">@lang('home.list4')</p>
                     </div>
