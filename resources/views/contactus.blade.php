@@ -9,11 +9,11 @@
                     <form method="GET" action="{{ route('contact.message') }}">
                         @csrf
                         <div class="contact-form">
-                            <h5 class="mb-4">Massage Us</h5>
+                            <h5 class="mb-4">@lang('home.message_us')</h5>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="mb-5">
-                                        <input type="text" class="form-control input-form" placeholder="Type Your name" name="name">
+                                        <input type="text" class="form-control input-form" placeholder="@lang('home.type_your_name')" name="name">
                                         @error('name')
                                             <span class="text-danger fw-bolder">{{ $message }}</span>
                                         @enderror
@@ -21,7 +21,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="mb-5">
-                                        <input type="email" class="form-control input-form" placeholder="Enter Your Email" name="email">
+                                        <input type="text" class="form-control input-form" placeholder="@lang('home.enter_your_email')" name="email">
                                         @error('email')
                                             <span class="text-danger fw-bolder">{{ $message }}</span>
                                         @enderror
@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="mb-5">
-                                        <input type="text" class="form-control input-form" placeholder="Your Phone" name="phone">
+                                        <input type="text" class="form-control input-form" placeholder="@lang('home.your_phone')" name="phone">
                                         @error('phone')
                                             <span class="text-danger fw-bolder">{{ $message }}</span>
                                         @enderror
@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="mb-5">
-                                        <input type="text" class="form-control input-form" placeholder="Your Address" name="address">
+                                        <input type="text" class="form-control input-form" placeholder="@lang('home.your_address')" name="address">
                                         @error('address')
                                             <span class="text-danger fw-bolder">{{ $message }}</span>
                                         @enderror
@@ -45,14 +45,14 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="mb-3">
-                                        <textarea style="height: 120px;" type="email" class="form-control" placeholder="Write your text ..." name="message"></textarea>
+                                        <textarea style="height: 120px;" type="email" class="form-control" placeholder="@lang('home.write_your_text')" name="message"></textarea>
                                         @error('message')
                                             <span class="text-danger fw-bolder">{{ $message }}</span>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="btn text-start">
-                                    <button type="submit" class="submit-btn">Send Massage</button>
+                                    <button type="submit" class="submit-btn">@lang('home.send_message')</button>
                                 </div>
                             </div>
                         </div>
@@ -60,12 +60,11 @@
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
                     <div class="contact-info">
-                        <h5>Contact info</h5>
+                        <h5>@lang('home.contact_info')</h5>
                         <hr class="info">
                         <div class="info d-flex mt-4">
                             <i class="fas fa-map-marker-alt mt-1 me-2"></i>
-                            <p>Riadah Incubators Startup Studio And corporate factory - Khaldiya Towers - 4th Tower - Faisal Bin Turki Road - Office
-                            No. 6 - Floor 13 - Riyadh</p>
+                            <p>@lang('home.office_address')</p>
                         </div>
                         <div class="info d-flex mt-2">
                             <i class="fas fa-phone-alt mt-1 me-2"></i>
@@ -75,7 +74,7 @@
                             <i class="far fa-envelope mt-1 me-2"></i>
                             <p>info@saudihemam.com</p>
                         </div>
-                        <h5>Social Connect</h5>
+                        <h5>@lang('home.social_connect')</h5>
                         <hr class="info">
                         <div class="social">
                             <ul class="d-flex">
@@ -108,8 +107,8 @@
         <div class="container py-lg-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-1">
-                    <h3 class="mt-1">Get Notification</h3>
-                    <p class="paragraph">Subscribe here to get update notification in your mail</p>
+                    <h3 class="mt-1">@lang('home.get_notification')</h3>
+                    <p class="paragraph">@lang('home.get_update_notificatin')</p>
                 </div>
                 @include('app_components.subscriber')
             </div>

@@ -1,3 +1,6 @@
+@php
+    $locale = app()->getLocale();
+@endphp
 @extends('layouts.app')
 @section('title', 'Home')
 @section('content')
@@ -9,7 +12,7 @@
                     <div class="col-12">
                         <div class="banner-content">
                             <h1 class="banner-title">@lang('home.helloworld')</h1>
-                            <h2 class="mt-4">@lang('home.we_are_able_to_work')</h2>
+                            <h2 class="mt-4">@lang('home.banner-text')</h2>
                             <img src="assets/img/photos/banner-line1.png" alt="banner-line">
                             <img class="ms-4" src="assets/img/photos/banner-line2.png" alt="banner-line">
                             <img class="ms-4" src="assets/img/photos/banner-line3.png" alt="banner-line">
@@ -61,7 +64,7 @@
         </div>
     </section>
     <!-- OUR WORK TYPE PART END -->
-
+    
     <!-- ACHIVEMENT PART START -->
     <section class="counter-section">
         <div class="overlay">
@@ -86,7 +89,7 @@
                             <h3 class="counter">12 </h3>
                             <h3> +</h3>
                         </div>
-                        <p>@lang('home.native_language')</p>
+                        <p class="multiple-lang">@lang('home.native_language')</p>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-4 mb-2 text-center counter-part">
                         <div class="span d-flex justify-content-center">
@@ -243,21 +246,53 @@
     <!-- TESTIMONIAL PART START -->
     <section class="testimonial-part py-5 my-lg-5">
         <div class="container coma">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img class="user" src="assets/img/users/testimonial.png" alt="testimonial-img">
+            <div class="row testimonial-slide">
+                <div class="col-12 text-center slider-item">
+                    <img class="img-fluid mx-auto user" src="assets/img/users/testimonial.png" alt="testimonial-img">
                     <p class="paragraph mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form,
                         by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
                         of
                         Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
                     <div class="author my-4">
-                        <span> <img src="assets/img/photos/testimonial-line.png" alt="line"> &nbsp;&nbsp;&nbsp; Asadullah Galib</span>
+                        <span class="fw-bold"> <i class="fa fa-window-minimize" aria-hidden="true"></i> Asadullah Galib</span>
                     </div>
                     <div class="icon">
                         <i class="fas fa-circle m-2 active"></i>
-                        <i class="fas fa-circle m-2"></i>
-                        <i class="fas fa-circle m-2"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                    </div>
+                </div>
+                <div class="col-12 text-center slider-item">
+                    <img class="img-fluid mx-auto user" src="assets/img/users/testimonial.png" alt="testimonial-img">
+                    <p class="paragraph mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form,
+                        by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                        of
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    <div class="author my-4">
+                        <span class="fw-bold"> <i class="fa fa-window-minimize" aria-hidden="true"></i> Asadullah Galib</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                    </div>
+                </div>
+                <div class="col-12 text-center slider-item">
+                    <img class="img-fluid mx-auto user" src="assets/img/users/testimonial.png" alt="testimonial-img">
+                    <p class="paragraph mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form,
+                        by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                        of
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    <div class="author my-4">
+                        <span class="fw-bold"> <i class="fa fa-window-minimize" aria-hidden="true"></i> Asadullah Galib</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
+                        <i class="fas fa-circle m-2 active"></i>
                     </div>
                 </div>
             </div>
@@ -268,8 +303,8 @@
     <!-- LATEST NEWS PART START -->
     <section id="latest-news-part" class="latest-news-part my-5">
         <div class="container py-lg-5">
-            <span>Media Center</span>
-            <h4 class="mt-4">Latest News</h4>
+            <span>@lang('home.media_center')</span>
+            <h4 class="mt-4">@lang('home.latest_news')</h4>
             <hr class="latest-news">
             <div class="row justify-content-center">
                 @foreach ($blogs as $blog)
@@ -280,7 +315,7 @@
                                 <span>{{ $blog->created_at->diffForHumans() }}</span>
                                 <h6 class="mt-3">{{ Str::limit($blog->title, 48, $end='...') }}</h6>
                                 <p class="paragraph mt-3 p-2">{{ Str::limit($blog->title, 70, $end='...')  }}</p>
-                                <a href="{{ route('blog.details', $blog->slug) }}"><em>Read More ></em></a>
+                                <a href="{{ route('blog.details', $blog->slug) }}"><em>@lang('home.read_more') ></em></a>
                             </div>
                         </div>
                     </div>
@@ -295,8 +330,8 @@
         <div class="container py-lg-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-1">
-                    <h3 class="mt-1">Get Notification</h3>
-                    <p class="paragraph">Subscribe here to get update notification in your mail</p>
+                    <h3 class="mt-1">@lang('home.get_notification')</h3>
+                    <p class="paragraph">@lang('home.get_update_notificatin')</p>
                 </div>
                 @include('app_components.subscriber')
             </div>

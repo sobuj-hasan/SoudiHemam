@@ -30,7 +30,6 @@ Route::get('/dashboard', function () {
             Route::resources([
 
             ]);
-
             Route::get('user/profile', 'UserProfileController@index')->name('user.profile');
             Route::get('user/profile/edit', 'UserProfileController@edit')->name('user.profile.edit');
             Route::post('user/profile/update', 'UserProfileController@update')->name('user.profile.update');

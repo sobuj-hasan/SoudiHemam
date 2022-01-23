@@ -14,7 +14,7 @@ return [
     "contactus" => "Contact Us",
     "signup" => "Sign Up",
     "helloworld" => "Hello World !",
-    "we_are_able_to_work" => "We are also able to do work",
+    "banner-text" => "We are also able to do work",
     "list1" => "I can be your mute and deaf audible voice",
     "list2" => "I am able to be your guide. You blind one",
     "list3" => "I am able to connect you to the big world with a motor disability",
@@ -53,14 +53,112 @@ return [
     "rehabilitation_and_training3" => "Full use of Windows and Microsoft Office programs",
     "rehabilitation_and_training4" => "Proficiency in the Internet and e-mail",
     "read_more" => "Read More",
-
-    "copyright" => "@copyright-2022 | All right reserved training incubator Ltd.",
+    "latest_news" => "Latest News",
+    "get_notification" => "Get Notification",
+    "subscriber" => "Subscribe",
+    "get_update_notificatin" => "Subscribe here to get update notification in your mail",
+    "email_address" => "Email Address",
+    "our_business_scope" => "Our Business Scope",
+    "footer_text" => "To find out what's new, send us your e-mail and you will receive our newsletter",
+    "business_services" => "Business Services",
+    "our_partner_area" => "Our Partner area",
+    "account" => "Account",
+    "news_and_media" => "News & Media",
+    "we_are_able_to_work" => "We are able to do work and can be part of the prisoner change",
+    "connect_with_us" => "Connect With Us",
+    "copyright" => "Copyright-2022 | All rights reserved to Training Incubator Co. Ltd.",
     "terms" => "Terms & Condition",
     "privacy_policy" => "Privacy & Policy",
     "help_support" => "Help & Support",
-    "footer_text" => "To find out what's new, send us your   e-mail and you will receive our newsletter",
-    "email_address" => "Email Address",
-
+    // ===============================
+    // Aboutus/Business Scope 
+    // ===============================
+    "lets_check" => "Let's check",
+    "business_scope_text" => "Saudi Hemam is looking forward to provide reliable services and from the aspirations of the public, private and third sectors in partnership with many partners, based on the needs of customers, as they target the Saudi Hemam in partnership with many parties",
+    "insurance_banking_sector" => "Insurance and banking sector",
+    "health_sector" => "Health Sector",
+    "logistic_sector" => "Logistic Sector",
+    "tourism_sector" => "Tourism Sector",
+    "mining_sector" => "Mining Sector",
+    "hospitality_sector" => "Hospitality Sector",
+    "construction_sector" => "Construction Sector",
+    "research_and_development" => "Research and Development",
+    "industrial_sector" => "Industrial Sector",
+    "agricultural_sector" => "Agricultural Sector",
+    // ===============================
+    // Our Services 
+    // ===============================
+    "our_services_text" => "Saudi Hemam is unique, and according to everyone’s aspirations, by providing external operating services for companies in cooperation with their partners in the Kingdom of Saudi Arabia.",
+    "our_services_text2" => "The Kingdom of Humanity and its international partners, by providing a spatial and temporal service based on the belief in the role of community partnership and to transform society from pastoral to developmental and to be part of the “Kingdom’s Vision 2030” By generating jobs and providing the following services",
+    "services_area" => "Services Area",
+    // ===============================
+    // Qualification & Training page
+    // ===============================
+    "qualification_and_training" => "Qualification and Training",
+    "the_motto_of_saudi" => "The motto of our Saudi Hemam is",
+    "saudi_hemam_qualification_and_training_title" => "“SAUDI HEMAM IS LIKE THE TUWAIQ MOUNTAIN “",
+    "saudi_hemam_qualification_and_training_text" => "We in Saudi Hemam are always motivated by a passion for rehabilitation and training to unleash people of determination and help them advance, discover strengths and reach high levels of performance. We think about the concerns of the Saudi Hemam in the sense that investing in the human element is the greatest investment.",
+    "Rehabilitation_and_training_of_blind" => "Rehabilitation and training of blind and visually impaired",
+    "Rehabilitation_text1" => "Learning the computer and the use of the mobile phone through a speaking program",
+    "Rehabilitation_text2" => "Qualification to use the speaking program, whether on a computer or mobile, in a professional manner",
+    "Rehabilitation_text3" => "Full use of Windows and Microsoft Office programs",
+    "Rehabilitation_text4" => "Proficiency in the Internet and e-mail",
+    "Videography_and_montage_course_for_the_deaf_and_dumb" => "Videography and montage course for the deaf and dumb",
+    "Videography_and_montage_course_for_the_deaf_and_dumb_article" => "This course is carefully designed for beginners in the field of video shooting and montage to provide them with the basic skills of video shooting, as well as learn editing skills using Adobe Premiere (Pr) program in order to qualify them to enter the labor market as certified videographers and montage",
+    "Digital_marketing" => "Digital marketing",
+    "Digital_marketing_article" => "We present through it a presentation of all the skills, concepts and modern digital marketing, starting with paid advertisements on social media programs, Google AdWords and YouTube, and passing through how to reach the target customers to achieve the highest possible return on mROI advertising, and ending with advertising campaigns for smartphone applications and ways to follow up and continuously improve their results and statistics",
+    "Motion_graphics_course" => "Motion graphics course",
+    "Motion_graphics_course_article" => "It focuses on how to convert data and information into animated visual images using the Adobe After Effects (Ae) program as a basic program and using Adobe Illustrator as an assistant program to obtain an integrated animated video with sound and image. into a displayable final product",
+    "Call_center_course" => "Call center course",
+    "Call_center_course_article" => "How to deal with different types of customers and solve their problems in addition to developing a good means of communication over the phone by leaving a good imprint on the speaker and the company providing the service, which makes the customer or subscriber happy with his dealings with them and wants to repeat the experience again",
+    "How_to_create_a_website" => "How to create a website",
+    "How_to_create_a_website_text1" => "Blogging (a free way to profit).",
+    "How_to_create_a_website_text2" => "Types of hosting and the difference between free and paid hosting",
+    "How_to_create_a_website_text3" => "How to reserve a unique domain name for your company",
+    "How_to_create_a_website_text4" => "Building a website using WordPress",
+    "How_to_create_a_website_text5" => "Website settings and suitability for search engines",
+    "How_to_create_a_website_text6" => "How to profit from your website",
+    // ===================================
+    // Our partner 
+    // ===================================
+    "our_business_partners" => "Our Business Partners",
+    "our_business_partners_article" => "It implements giant projects for many companies, as the services it provides to its clients include internal and external procedures for operations using multiple channels and across several commercial activities. It provides its customers with integrated call center solutions and deals with all types of communications and call center interactions to provide processing services and deal with all inquiries, requests, activations, complaints, telemarketing, surveys and others. In addition, the company undertakes all operational support activities for these companies, including training activities, knowledge management, performance quality control, advisory services, and the development of standards and procedures for improving operations.",
+    // ===================================
+    // Features and Capabilities
+    // ===================================
+    "features_and_possibilities" => "Features and Possibilities",
+    "features_and_possibilities_text1" => "Saudi Hemam is distinguished and it consists of a system of local, regional and international partnerships meant to support call centers",
+    "features_and_possibilities_text2" => "Saudi Hemam is distinguished, if not the only ones in the world specialized to provide their services through people of determination",
+    "features_and_possibilities_text3" => "Saudi Hemam is distinguished by an official accreditation from the most reliable and strict international quality organizations, including the accreditation of an organization for quality control and management of operations and operational activities, information security management, and accreditation of quality management from an organization in the field of excellence in operations, management of communication centers and management of experiences / relationship with customers",
+    "features_and_possibilities_text4" => "Saudi Hemam is distinguished and unique in their strategic partnership with being the only company at the regional level that adopts and complies with the principles of continuous development and improvement of processes and procedures, the best practices and concepts of raising the quality of operations, reducing costs and reducing the chances of normal and critical errors to the lowest levels through the application of methodologies",
+    "features_and_possibilities_text5" => "The passions of Saudi Hemam is distinguished and supported by more than thirty years of experience for the owners, as well as experiences with the efforts of a local and international elite of businessmen and pioneers in the telecommunications industry and outsourcing services on behalf and external support",
+    "features_and_possibilities_text6" => "Saudi Hemam is distinguished by their harnessing and focusing their capabilities and their technical operational, administrative and internal leadership capabilities and the development of the operational infrastructure for people of determination",
+    "features_and_possibilities_text7" => "Saudi Hemam is distinguished by providing services through a select group of the work team to take a prominent position among the best companies that provide solutions for outsourcing and call centers",
+    "features_and_possibilities_text8" => "Saudi Hemam is distinguished by establishing strategic alliances with the third sector and global operating service providers, and it is one of the world's leading companies in this field, which has enabled Saudis to expand its capabilities in providing services on a larger scale within many different sectors and geographical locations.",
+    "features_and_possibilities_text9" => "Saudi Hemam is distinguished by the operation and management of their projects within integrated and interconnected operational facilities distributed within the Kingdom of Saudi Arabia, the Kingdom of Humanity",
+    "features_and_possibilities_text10" => "Saudi Hemam is distinguished by developing its solutions packages and making them more comprehensive and innovative to serve people of determination in order to expand the scope of its services to include a full range of customer experience management solutions",
+    "features_and_possibilities_text11" => "Saudi Hemam is distinguished by a wide range of communication management and institutional support solutions that derive from the distinguished technical infrastructure and reliance on international best practices in work",
+    "features_and_possibilities_text12" => "Saudi Hemam is distinguished by the selection of the work team and to have a high degree of qualification and professionalism, which makes all our work efficient, accurate and effective",
+    "features_and_possibilities_text13" => "Saudi Hemam is flexible by providing a large number of service and communication channels and communication channels of all kinds (traditional, digital, interactive and community)",
+    "features_and_possibilities_text14" => "Saudi Hemam is distinguished for being able to deal with all types of calls through making voice calls and digital communication via the Internet, fax, e-mail, live chat and various social media channels.",
+    "features_and_possibilities_text15" => "Saudi Hemam is characterized by having strong self-capabilities through the automated response system (IVR) and the voice recognition system, which are considered by the Saudis, and a combination of systems solutions for incoming and outgoing communication events that meet most of the contact management needs according to modern concepts",
+    "features_and_possibilities_text16" => "Saudi Hemam is distinguished by their willingness and continuity to provide work to their clients, managed by 24 hours a day, seven days a week, where our team is ready to deal with any needs around the clock, seven days a week, and our flexible technical infrastructure is designed to allow full continuity of work without any interruption",
+    "features_and_possibilities_text17" => "Saudi Hemam is distinguished by their management teams and derive their strength from a team that has expertise and human resources with many years of experience in the field of communication management. All members of the company’s management team have extensive experience in contact management systems (customer service, call centers, customer relationship management and self-service).",
+    "features_and_possibilities_text18" => "Saudi Hemam is distinguished by a distinguished staff team who deliver their message to the community that they are able to work in operating all partner projects and they are highly qualified cadres with scientific, academic and cultural qualifications supported by a team of experienced trainers, managers, project managers and team leaders.",
+    "features_and_possibilities_text19" => "Saudi Hemam is characterized by the technology-based operation of the most modern Internet Protocol (IP) communication centers. The key element in setting up our technology systems is managing a strong communication platform on which diverse business systems depend",
+    // ================================
+    // Contact us page 
+    // ================================
+    "message_us" => "Message Us",
+    "type_your_name" => "Type Your name",
+    "enter_your_email" => "Enter Your Email",
+    "your_phone" => "Your Phone",
+    "your_address" => "Your Address",
+    "write_your_text" => "Write your text .",
+    "send_message" => "Send Message",
+    "contact_info" => "Contact info",
+    "office_address" => "Riyadh Incubators Startup Studio And corporate factory - Khaliah Towers - 4th Tower - Faisal Bin Turki Road - Office No. 6 - Floor 13",
+    "social_connect" => "Social Connect",
     // =============================
     // Login Page 
     // =============================

@@ -15,20 +15,62 @@ body {
     margin-left: 0px;
 }
 
+.uniq-service-part .text-box {
+    margin-right: -153px !important;
+}
+.uniq-service-part .text-box {
+    margin-left: 0px;
+    margin-top: 25px;
+}
+
+.banner-title {
+    padding: 0px;
+}
+
 
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
-    
+    .uniq-service-part .text-box {
+        margin-right: 0px !important;
+    }
+
+    .arabic-button{
+        margin-right: 0px;
+    }
+    .login-part .arabic-button {
+        margin-right: 40px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
-    
+    .uniq-service-part .text-box {
+        margin-right: 0px !important;
+    }
+
+    .arabic-button{
+        margin-right: 0px;
+    }
+
+    .login-part .arabic-button {
+        margin-right: 38px;
+    }
+
+
 }
 
 @media only screen and (max-width: 576px) {
-    
+    .login-part .arabic-button {
+        margin-right: 15px;
+    }
+
+
 }
+
+
+
+
 
 
 

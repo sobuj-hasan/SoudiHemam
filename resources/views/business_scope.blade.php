@@ -1,3 +1,6 @@
+@php
+    $locale = app()->getLocale();
+@endphp
 @extends('layouts.app')
 @section('title', 'Business Scope')
 @section('content')
@@ -7,7 +10,7 @@
             <div class="container py-lg-5">
                 <div class="row py-5">
                     <div class="col-12 text-center">
-                        <h4>Our Business Scope</h4>
+                        <h4>@lang('home.our_business_scope')</h4>
                     </div>
                 </div>
             </div>
@@ -22,17 +25,19 @@
                 <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
                     <div class="card">
                         <div class="card-border">
-                            <h4><strong><span>THE ACTIVITIES</span></strong> AND SECTORS <strong><span>SERVED</span></strong> BY SAUDI <strong><span>HEMAM</span></strong></h4>
+                            @if ($locale == 'ar')
+                                <h4><strong><span>الأنشطة </span></strong>  والقطاعات التي <strong><span> يخدمها</span></strong> بواسطة <strong><span> الهمام السعودي</span></strong></h4>
+                            @else
+                                <h4><strong><span>THE ACTIVITIES</span></strong> AND SECTORS <strong><span>SERVED</span></strong> BY THE <strong><span>SAUDI HEMAM</span></strong></h4>
+                            @endif
                             <div class="lets-btn mt-5 mb-2">
-                                <a href="" class="hemam-btn">Let's Check</a>
+                                <a href="" class="hemam-btn">@lang('home.lets_check')</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
-                    <p class="paragraph p-2 p-lg-4 mt-4">Saudi Hemam is looking forward to provide reliable services and from the aspirations of the public, private and third
-                    sectors in partnership with many partners, based on the needs of customers, as they target the Saudi Hemam in
-                    partnership with many parties</p>
+                    <p class="paragraph p-2 p-lg-4 mt-4">@lang('home.business_scope_text')</p>
                     <div class="text-box">
                         <div class="row d-flex">
                             <div class="left">
@@ -55,43 +60,43 @@
             <div class="row justify-content-center">
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/Insurance-and-banking-sector.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Insurance and banking sector</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.insurance_banking_sector')</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/Health-Sector.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Health Sector</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.health_sector')</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/logistic-sector.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Logistic Sector</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.logistic_sector')</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/tourism-sector.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Tourism Sector</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.tourism_sector')</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/mining-secctor.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Mining Sector</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.mining_sector')</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/hospitality-sector.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Hospitality Sector</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.hospitality_sector')</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/construction-sector.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Construction Sector</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.construction_sector')</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/research-and-development.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Research and Development</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.research_and_development')</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/industrial-sector.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Inductrial Sector</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.industrial_sector')</h5>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="{{ asset('assets/img/photos/Agriculture-sector.png') }}" alt="business-scope">
-                    <h5 class="mt-2 mb-4">Agricultural Sector</h5>
+                    <h5 class="mt-2 mb-4">@lang('home.agricultural_sector')</h5>
                 </div>
             </div>
         </div>
@@ -103,8 +108,8 @@
         <div class="container py-lg-5">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-1">
-                    <h3 class="mt-1">Get Notification</h3>
-                    <p class="paragraph">Subscribe here to get update notification in your mail</p>
+                    <h3 class="mt-1">@lang('home.get_notification')</h3>
+                    <p class="paragraph">@lang('home.get_update_notificatin')</p>
                 </div>
                 @include('app_components.subscriber')
             </div>

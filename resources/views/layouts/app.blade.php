@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     @if ($locale == 'ar')
-        <link rel="stylesheet" href="css/arabic.css">
+        <link rel="stylesheet" href="{{ asset('assets/css/arabic.css') }}">
     @endif
 </head>
 
@@ -228,8 +228,8 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="middle text-center">
                         <img class="pt-3" src="{{ asset('assets/img/logo/logo.png') }}" alt="logo">
-                        <p class="paragraph pt-4 pb-3">We are able to do work and can be part of the prisoner change</p>
-                        <h6>Connect With Us</h6>
+                        <p class="paragraph pt-4 pb-3">@lang('home.we_are_able_to_work')</p>
+                        <h6>@lang('home.connect_with_us')</h6>
                         <div class="footer-manu d-flex justify-content-center mt-4 mb-4">
                             <li class="ms-1 me-1">
                                 <a href="#"> <i class="fab fa-facebook-f"></i> </a>
@@ -257,22 +257,22 @@
                         <div class="footer-link">
                             <ul>
                                 <li class="my-3 ms-2">
-                                    <a href="{{ route('business.scope') }}">Our Business Scope</a>
+                                    <a href="{{ route('business.scope') }}">@lang('home.our_business_scope')</a>
                                 </li>
                                 <li class="my-3 ms-2">
-                                    <a href="{{ route('service') }}">Business Services</a>
+                                    <a href="{{ route('service') }}">@lang('home.business_services')</a>
                                 </li>
                                 <li class="my-3 ms-2">
-                                    <a href="{{ route('our.partner') }}">Our Partner area</a>
+                                    <a href="{{ route('our.partner') }}">@lang('home.our_partner_area')</a>
                                 </li>
                                 <li class="my-3 ms-2">
-                                    <a href="{{ route('login') }}">Account</a>
+                                    <a href="{{ route('login') }}">@lang('home.account')</a>
                                 </li>
                                 <li class="my-3 ms-2">
                                     <a href="{{ route('contactus') }}">@lang('home.contactus')</a>
                                 </li>
                                 <li class="my-3 ms-2">
-                                    <a href="{{ route('index') }}#latest-news-part">News & Media</a>
+                                    <a href="{{ route('features.capabilities') }}">@lang('home.features_and_possibilities')</a>
                                 </li>
                             </ul>
                         </div>
@@ -324,6 +324,25 @@
     <script src="{{ asset('assets/js/script.js') }}"></script>
     <!-- Toastr Scripts render -->
     {!! Notify::message() !!}
+
+    <script>
+        // Testimonial slider Autoplay
+        $('.testimonial-slide').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            @if ($locale == 'ar')
+                rtl: true,
+            @else
+                rtl: false,
+            @endif
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: false,
+            arrows: false,
+            nextArrow: $('.nxt'),
+            prevArrow: $('.prv'),
+        });
+    </script>
 
 </body>
 

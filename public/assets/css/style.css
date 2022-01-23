@@ -297,6 +297,9 @@ header {
     font-size: 18px;
     color: var(--qs);
 }
+.testimonial-part .author span i{
+    font-size: 30px;
+}
 .testimonial-part .icon .active{
     color: var(--vb);
 }
