@@ -24,9 +24,9 @@
                                 @enderror
                                 <a class="d-flex justify-content-end fw-bolder text-white mt-2" href="#">@lang('home.forget_password')</a>
                             </div>
-                            <div class="mt-3">
+                            <div class="mt-3 text-center">
                                 <button class="arabic-button" type="submit" name="submit">@lang('home.login')</button>
-                                <a class="d-flex justify-content-start fw-bolder text-white mt-2 ms-5 mb-5" href="{{ route('register') }}">@lang('home.havent_any_account') <em>&nbsp; @lang('home.signup')</em></a>
+                                <a class="d-flex justify-content-start fw-bolder text-white mt-2 ms-lg-5 mb-5" href="{{ route('register') }}">@lang('home.havent_any_account') <em>&nbsp; @lang('home.signup')</em></a>
                             </div>
                             <p class="fw-bolder d-flex justify-content-center">@lang('home.signin_using')</p>
                             <ul class="d-flex justify-content-center mb-5">

@@ -393,7 +393,6 @@ Our Service Page Css
 .uniq-service-part .card{
     border: 2px solid var(--vb);
     padding: 40px;
-    z-index: -1;
 }
 .uniq-service-part h4{
     font-weight: 600;
@@ -412,8 +411,7 @@ Our Service Page Css
 .uniq-service-part .text-box {
     background: var(--hg);
     min-height: 180px;
-    min-width: 120%;
-    margin-left: -140px;
+    min-width: 100%;
     z-index: 1;
     border-radius: 10px;
 }
@@ -433,6 +431,16 @@ Our Service Page Css
 .uniq-service-part .text-box .right .paragraph{
     padding-top: 20px;
     line-height: 30px;
+}
+.lets-btn a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 16px 34px;
+    background: var(--bgc);
+    border-radius: 3px;
+    color: var(--wc);
+    cursor: pointer;
 }
 
 /* =============================
@@ -640,7 +648,7 @@ Login Page css
     background: #652d90;
     height: 50px;
     width: 83%;
-    margin-left: 56px;
+    margin-left: 0px;
     border-radius: 5px;
     font-weight: 700;
     font-size: 22px;
@@ -707,7 +715,7 @@ Register page css
     background: #652d90;
     height: 50px;
     width: 88%;
-    margin-left: 40px;
+    margin-left: 0px;
     border-radius: 5px;
     font-weight: 500;
     font-size: 22px;

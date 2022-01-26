@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: 'Gothic', sans-serif;
+    font-family: 'Gothic', 'Molarabic';
     font-weight: 600;
     font-size: 14px;
     color: var(--pc);

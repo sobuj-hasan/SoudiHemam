@@ -159,6 +159,7 @@ return [
     "contact_info" => "Contact info",
     "office_address" => "Riyadh Incubators Startup Studio And corporate factory - Khaliah Towers - 4th Tower - Faisal Bin Turki Road - Office No. 6 - Floor 13",
     "social_connect" => "Social Connect",
+    "land_phone" => "+966551175959",
     // =============================
     // Login Page 
     // =============================

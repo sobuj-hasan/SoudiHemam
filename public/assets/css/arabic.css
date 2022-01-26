@@ -3,16 +3,11 @@
 
 body {
     font-size: 14px;
-    font-family: "Molarabic";
+    font-family: 'Gothic', 'Molarabic';
     font-weight: 600;
     line-height: 21px;
     background: #FFFFFF;
     font-style: none;
-}
-
-
-.arabic-button{
-    margin-left: 0px;
 }
 
 .uniq-service-part .text-box {
@@ -35,13 +30,6 @@ body {
         margin-right: 0px !important;
     }
 
-    .arabic-button{
-        margin-right: 0px;
-    }
-    .login-part .arabic-button {
-        margin-right: 40px;
-    }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -49,22 +37,10 @@ body {
         margin-right: 0px !important;
     }
 
-    .arabic-button{
-        margin-right: 0px;
-    }
-
-    .login-part .arabic-button {
-        margin-right: 38px;
-    }
-
 
 }
 
 @media only screen and (max-width: 576px) {
-    .login-part .arabic-button {
-        margin-right: 15px;
-    }
-
 
 }
 

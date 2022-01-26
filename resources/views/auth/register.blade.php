@@ -58,9 +58,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-4">
-                                <button class="arabic-button" type="submit" name="submit"> @lang('home.register') </button>
-                                <a class="d-flex justify-content-start text-white fw-bolder mt-2 ms-5 mb-5" href="{{ route('login') }}">@lang('home.already_have_account') <em>&nbsp; @lang('home.login')</em></a>
+                            <div class="mt-4 text-center">
+                                <button class="arabic-button fw-bold" type="submit" name="submit"> @lang('home.register') </button>
+                                <a class="d-flex justify-content-start text-white fw-bolder mt-2 ms-lg-5 mb-5" href="{{ route('login') }}">@lang('home.already_have_account') <em>&nbsp; @lang('home.login')</em></a>
                             </div>
                         </form>
                     </div>

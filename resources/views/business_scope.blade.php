@@ -31,7 +31,7 @@
                                 <h4><strong><span>THE ACTIVITIES</span></strong> AND SECTORS <strong><span>SERVED</span></strong> BY THE <strong><span>SAUDI HEMAM</span></strong></h4>
                             @endif
                             <div class="lets-btn mt-5 mb-2">
-                                <a href="" class="hemam-btn">@lang('home.lets_check')</a>
+                                <a href="{{ route('service') }}#service-part">@lang('home.lets_check')</a>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                                 <!-- No any text -->
                             </div>
                             <div class="right">
-                                <h1 style="font-size: 60px;" class="fw-bold">02</h1>
+                                <h1 style="font-size: 60px; height: 80px;" class="fw-bold"></h1>
                             </div>
                         </div>
                     </div>

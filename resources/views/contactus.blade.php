@@ -68,7 +68,7 @@
                         </div>
                         <div class="info d-flex mt-2">
                             <i class="fas fa-phone-alt mt-1 me-2"></i>
-                            <p>+966 55 117 5959</p>
+                            <p>@lang('home.land_phone')</p>
                         </div>
                         <div class="info d-flex mt-2 mb-3">
                             <i class="far fa-envelope mt-1 me-2"></i>

@@ -26,12 +26,12 @@
                     <div class="card">
                         <div class="card-border">
                             @if ($locale == 'ar')
-                                <h4><strong>السعوديين </strong> <span>همم </span> يقدم خدمة فريدة من نوعها</h4>
+                                <h4><strong>همم</strong> <span> السعوديين </span> يقدم خدمة فريدة من نوعها</h4>
                             @else
                                 <h4><strong>SAUDI</strong> <span>HEMAM</span> PROVIDE A <strong>UNIQUE</strong> SERVICE</h4>
                             @endif
                             <div class="lets-btn mt-5 mb-2">
-                                <a class="hemam-btn" href="#">@lang('home.lets_check')</a>
+                                <a href="{{ route('service') }}#service-part" class="hemam-btn">@lang('home.lets_check')</a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                     <div class="text-box">
                         <div class="row d-flex">
                             <div class="left">
-                                <h1>01</h1>
+                                <h1></h1>
                             </div>
                             <div class="right">
                                 <p class="paragraph">@lang('home.our_services_text2')</p>
@@ -55,7 +55,7 @@
     <!-- UNIQ SERVICE PART END -->
 
     <!-- OUR SERVICES START -->
-    <section class="service-part py-5">
+    <section id="service-part" class="service-part py-5">
         <div class="container py-lg-4 text-center">
             <h4 class="mb-5">@lang('home.services_area')</h4>
             <div class="row justify-content-center">
