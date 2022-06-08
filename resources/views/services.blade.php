@@ -61,7 +61,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
-                        <img class="mt-4" src="{{ asset('assets/img/icon/service1.png') }}" alt="service-img">
+                        <i style="color: #009dc7; font-size: 60px;" class="fa-brands fa-apple mt-4"></i>
                         <p class="paragraph p-4">@lang('home.service1')</p>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
-                        <img class="mt-4" src="{{ asset('assets/img/icon/service1.png') }}" alt="service-img">
+                        <i style="color: #009dc7; font-size: 42px;" class="fa-solid fa-photo-film mt-4"></i>
                         <p class="paragraph p-4">@lang('home.service5')</p>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
-                        <img class="mt-4" src="{{ asset('assets/img/icon/service6.png') }}" alt="service-img">
+                        <i style="color: #009dc7; font-size: 55px;" class="fa-solid fa-bullhorn mt-4"></i>
                         <p class="paragraph p-4">@lang('home.service10')</p>
                     </div>
                 </div>
@@ -133,13 +133,13 @@
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
-                        <img class="mt-4" src="{{ asset('assets/img/icon/service1.png') }}" alt="service-img">
+                        <i style="color: #009dc7; font-size: 50px;" class="fa-solid fa-globe mt-4"></i>
                         <p class="paragraph p-4">@lang('home.service13')</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="service">
-                        <img class="mt-4" src="{{ asset('assets/img/icon/service6.png') }}" alt="service-img">
+                        <i style="color: #009dc7; font-size: 48px;" class="fa-solid fa-cart-flatbed mt-4"></i>
                         <p class="paragraph p-4">@lang('home.service14')</p>
                     </div>
                 </div>

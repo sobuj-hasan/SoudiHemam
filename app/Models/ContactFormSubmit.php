@@ -13,7 +13,6 @@ class ContactFormSubmit extends Model
         'name',
         'email',
         'phone',
-        'address',
         'message',
     ];
 }

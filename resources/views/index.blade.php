@@ -6,7 +6,7 @@
 @section('content')
     <!-- Banner part Start -->
     <section class="banner-section">
-        <div class="overlay py-5">
+        <div class="overlay py-3">
             <div class="container py-lg-5">
                 <div class="row py-lg-4">
                     <div class="col-12">
@@ -16,7 +16,7 @@
                             <img src="assets/img/photos/banner-line1.png" alt="banner-line">
                             <img class="ms-4" src="assets/img/photos/banner-line2.png" alt="banner-line">
                             <img class="ms-4" src="assets/img/photos/banner-line3.png" alt="banner-line">
-                            <div class="banner-btn pt-5">
+                            <div class="banner-btn pt-3">
                                 <a class="custom-btn mt-4" href="{{ route('business.scope') }}">@lang('home.aboutus')</a>
                             </div>
                         </div>
